@@ -1,94 +1,184 @@
 {
   "completed-courses": [
     {
-      "description": "IoT Microcontrollers: Onboarding a Raspberry Pi Using AWS Greengrass"
+      "description": "IoT Microcontrollers: Onboarding a Raspberry Pi Using AWS Greengrass",
+      "href": "https://www.aws.training/Details/eLearning?id=33872",
+      "registration-date": "1 June, 2020",
+      "status": "Completed"
     },
     {
-      "description": "IoT Edge Computing: Amazon FreeRTOS Primer"
+      "description": "IoT Edge Computing: Amazon FreeRTOS Primer",
+      "href": "https://www.aws.training/Details/eLearning?id=33191",
+      "registration-date": "1 June, 2020",
+      "status": "Completed"
     },
     {
-      "description": "IoT Foundation: Predictive Maintenance"
+      "description": "IoT Foundation: Predictive Maintenance",
+      "href": "https://www.aws.training/Details/eLearning?id=26852",
+      "registration-date": "29 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "Internet of Things Foundation Series"
+      "description": "Internet of Things Foundation Series",
+      "href": "https://www.aws.training/Details/Curriculum?id=27289",
+      "registration-date": "29 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "IoT Foundation: Introduction to Fleet Management"
+      "description": "IoT Foundation: Introduction to Fleet Management",
+      "href": "https://www.aws.training/Details/eLearning?id=26760",
+      "registration-date": "28 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "IoT Foundation: Command and Control"
+      "description": "IoT Foundation: Command and Control",
+      "href": "https://www.aws.training/Details/eLearning?id=23822",
+      "registration-date": "27 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "IoT Foundation: Telemetry"
+      "description": "IoT Foundation: Telemetry",
+      "href": "https://www.aws.training/Details/eLearning?id=48709",
+      "registration-date": "27 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Well-Architected"
+      "description": "AWS Well-Architected",
+      "href": "https://www.aws.training/Details/Curriculum?id=42037",
+      "registration-date": "25 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Database Offerings"
+      "description": "AWS Database Offerings",
+      "href": "https://www.aws.training/Details/Curriculum?id=38111",
+      "registration-date": "22 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Storage Offerings"
+      "description": "AWS Storage Offerings",
+      "href": "https://www.aws.training/Details/eLearning?id=39246",
+      "registration-date": "22 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "Network Ninja to Cloud Ninja"
+      "description": "Network Ninja to Cloud Ninja",
+      "href": "https://www.aws.training/Details/Video?id=27497",
+      "registration-date": "21 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Security Fundamentals (Second Edition)"
+      "description": "AWS Security Fundamentals (Second Edition)",
+      "href": "https://www.aws.training/Details/eLearning?id=34259",
+      "registration-date": "20 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "Machine Learning Terminology and Process"
+      "description": "Machine Learning Terminology and Process",
+      "href": "https://www.aws.training/Details/eLearning?id=20294",
+      "registration-date": "19 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "Demystifying AI/ML/DL"
+      "description": "Demystifying AI/ML/DL",
+      "href": "https://www.aws.training/Details/Curriculum?id=27241",
+      "registration-date": "19 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "What is Deep Learning?"
+      "description": "What is Deep Learning?",
+      "href": "https://www.aws.training/Details/Video?id=27405",
+      "registration-date": "19 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "What is Machine Learning?"
+      "description": "What is Machine Learning?",
+      "href": "https://www.aws.training/Details/Video?id=27404",
+      "registration-date": "19 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "What is Artificial Intelligence?"
+      "description": "What is Artificial Intelligence?",
+      "href": "https://www.aws.training/Details/Video?id=27394",
+      "registration-date": "19 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Lambda Foundations"
+      "description": "AWS Lambda Foundations",
+      "href": "https://www.aws.training/Details/eLearning?id=27197",
+      "registration-date": "18 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Cloud Practitioner Essentials (Second Edition)"
+      "description": "AWS Cloud Practitioner Essentials (Second Edition)",
+      "href": "https://www.aws.training/Details/Curriculum?id=27076",
+      "registration-date": "18 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Cloud Practitioner Essentials (Second Edition): Pricing and Support"
+      "description": "AWS Cloud Practitioner Essentials (Second Edition): Pricing and Support",
+      "href": "https://www.aws.training/Details/eLearning?id=29704",
+      "registration-date": "18 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Cloud Practitioner Essentials (Second Edition): AWS Security"
+      "description": "AWS Cloud Practitioner Essentials (Second Edition): AWS Security",
+      "href": "https://www.aws.training/Details/eLearning?id=29703",
+      "registration-date": "18 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Cloud Practitioner Essentials (Second Edition): AWS Architecture"
+      "description": "AWS Cloud Practitioner Essentials (Second Edition): AWS Architecture",
+      "href": "https://www.aws.training/Details/eLearning?id=29702",
+      "registration-date": "17 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Cloud Practitioner Essentials (Second Edition): AWS Integrated Services"
+      "description": "AWS Cloud Practitioner Essentials (Second Edition): AWS Integrated Services",
+      "href": "https://www.aws.training/Details/eLearning?id=29701",
+      "registration-date": "17 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Cloud Practitioner Essentials (Second Edition): AWS Core Services"
+      "description": "AWS Cloud Practitioner Essentials (Second Edition): AWS Core Services",
+      "href": "https://www.aws.training/Details/eLearning?id=29700",
+      "registration-date": "16 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "Introduction to AWS Identity and Access Management (IAM)"
+      "description": "Introduction to AWS Identity and Access Management (IAM)",
+      "href": "https://www.aws.training/Details/Video?id=16448",
+      "registration-date": "16 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Development Tools Services Overview"
+      "description": "AWS Development Tools Services Overview",
+      "href": "https://www.aws.training/Details/Video?id=16204",
+      "registration-date": "15 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "Introduction to AWS Billing and Cost Management"
+      "description": "Introduction to AWS Billing and Cost Management",
+      "href": "https://www.aws.training/Details/Video?id=15875",
+      "registration-date": "15 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "Introduction to Serverless Development"
+      "description": "Introduction to Serverless Development",
+      "href": "https://www.aws.training/Details/eLearning?id=27074",
+      "registration-date": "15 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "Introduction to Amazon Elastic Compute Cloud (EC2)"
+      "description": "Introduction to Amazon Elastic Compute Cloud (EC2)",
+      "href": "https://www.aws.training/Details/Video?id=16382",
+      "registration-date": "14 May, 2020",
+      "status": "Completed"
     },
     {
-      "description": "AWS Cloud Practitioner Essentials (Second Edition): Introduction to the AWS Cloud"
+      "description": "AWS Cloud Practitioner Essentials (Second Edition): Introduction to the AWS Cloud",
+      "href": "https://www.aws.training/Details/eLearning?id=29699",
+      "registration-date": "14 May, 2020",
+      "status": "Completed"
     }
   ]
 }

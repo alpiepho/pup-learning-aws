@@ -122,72 +122,23 @@ const process_completed = async (browser, options, data) => {
       PAGE_WAIT_COMPLETED
     );
 
-    // newdata = await page.evaluate(() => {
-    //   let result = {};
-
-    //   // parse: 'Learning History (108)'
-    //   let count = document.querySelector('.me__content-tab--completed').innerText;
-    //   result['count'] = count.replace(')','').split('(')[1];
-    //   return result;
-    // });
-
-    // // check for optimization, of count is same, then we are done.
-    // if (!options.forceFullGather && sampleData['count'] == newdata['count']) {
-    //   console.log("same expected course count, nothing to do.");
-    //   data['completed-courses'] = [];
-    //   return;
-    // }
-
     // if (options.scrollToBottom) {
     //   await auto_scroll(page);
     // }
-
-    // try {
-    //   // HACK: should get a count (clicking on a class might click all, not sure)
-    //   await page.click('.lls-card-child-content__button'); // Show content
-    // } catch {}
 
     await base.delay(PAGE_WAIT_COMPLETED);
     await base.process_options(browser, options);
 
     newdata = await page.evaluate(() => {
       let result = {};
-
-      // // parse: 'Learning History (108)'
-      // let count = document.querySelector('.me__content-tab--completed').innerText;
-      // result['count'] = count.replace(')','').split('(')[1];
-
       result['completed-courses'] = []
       let card_conts = document.querySelectorAll('table tr td[data-label="Description"]');
       for (i=0; i<card_conts.length; i++) {
         let entry = {};
-      //   entry['title'] = '';
-      //   entry['link'] = '';
-      //   entry['author'] = '';
-      //   entry['released-date'] = '';
-      //   entry['duration'] = '';
-      //   entry['completed-date'] = '';
-      //   entry['img'] = '';
-      //   entry['linkedin'] = '';
-      //   entry['details'] = '';
         entry['description'] = card_conts[i].querySelector('a').innerText;
-      //   temp = card_conts[i].querySelector('a.card-entity-link').href;
-      //   // get first 5 parts of href
-      //   entry['link'] =  temp.split('/').slice(0,5).join('/');
-      //   temp = card_conts[i].querySelector('.lls-card-authors');
-      //   if (temp) entry['author'] = temp.innerText.replace('By: ','');
-      //   temp = card_conts[i].querySelector('.lls-card-released-on');
-      //   if (temp) entry['released-date'] = temp.innerText.replace('Released ','');
-      //   temp = card_conts[i].querySelector('.lls-card-duration-label');
-      //   if (temp) entry['duration'] = temp.innerText;
-      //   temp = card_conts[i].querySelector('.lls-card-completion-state--completed');
-      //   if (temp) entry['completed-date'] = temp.innerText.replace('Completed ','');
-      //   temp = card_conts[i].querySelector('img');
-      //   if (temp) entry['img'] = temp.src;
-      //   //entry["linkedin"] = newdata["linkedin"][i];
-      //   //if (temp) entry['linkedin'] = temp;
-      //   //temp = card_conts[i].querySelector('.meta-description');
-      //   //if (temp) entry['details'] = temp.innerText;
+        entry['href'] = card_conts[i].querySelector('a').href;
+        entry['registration-date'] = card_conts[i].parentElement.querySelector('td[data-label="Registration Date"]').innerText;
+        entry['status'] = card_conts[i].parentElement.querySelector('td[data-label="Status"]').innerText;
         result['completed-courses'].push(entry);
       }
       return result;
