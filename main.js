@@ -177,7 +177,7 @@ const SCREENSHOT_DIR = "./screenshots";
 const main = async () => {
   // INTERNAL OPTIONS
   options = { 
-    browserType:     "chrome", // "chrome, firefox" // WARNING: hit limit on number of detail pages with firefox
+    browserType:     "firefox", // "chrome, firefox" // WARNING: hit limit on number of detail pages with firefox
     headless:        false,     // run without windows
     forceFullGather:  true,     // skip test for number of course
     scrollToBottom:   true,     // scroll page to bottom (WARNING: non-visible thumbnails are not loaded until page is scrolled)
@@ -196,9 +196,7 @@ const main = async () => {
 
   // login, get list of completed courses, logout
   data = {}
-  await site.process_login(browser, options);
   await site.process_completed(browser, options, data);
-  // await site.process_logout(browser, options);
   // await base.browser_close(browser);
 
   //DEBUG

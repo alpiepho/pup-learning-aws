@@ -1,11 +1,21 @@
 ![website](https://github.com/alpiepho/pup-learning-aws/workflows/website/badge.svg)
 
-# pup-learning-aws
 
 :warn: WARNING: this is just a start/stub at this time.
 
 Deployed on GitHub pages [here](https://alpiepho.github.io/pup-learning-aws/).
 
+:warn: <b>IMPORTANT NOTE</b>: The file **transcript.html** is manually created:
+- login into AWS
+- navigate to "Transcript"
+- select "Completed"
+- use Chrome tools (inspect)
+- select top html tag
+- right-click and 'copy-outer-html'
+- paste into **transcript.html**
+- this became neccessary when AWS started blocking the automated login from Puppeteer.
+
+# pup-learning-aws
 
 A tool to gather Learning classes completed along with details.
 
