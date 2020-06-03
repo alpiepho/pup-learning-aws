@@ -19,41 +19,44 @@ const sampleData = require(SAMPLE_FILE);
 const process_course_details = async (page, options, href) => {
   console.log("process_course_details: " + href);
   var newdata = {};
-  // newdata['linkedin'] = "";
-  newdata['details'] = "";
-  
+  newdata['description'] = "";
+  newdata['duration'] = "";
+  newdata['level'] = "";
+  newdata['prereqsuisites'] = "";
+
   await base.browser_get_filtered(page, href, PAGE_WAIT_DETAILS);
 
   newdata = await page.evaluate(() => {
     let result = {};
     // parse: courses
-    // TODO:
-    //  - course toc
-    //    - sections
-    //      - title
-    //      - subsections
-    //        - title
-    //        - description
-    //        - durration
-    //  - course exercise files?
-    //  - **could** also grab transcript???
-    // WARNING: with limit on number of detail pages, will need to start with clear sample.json and rebuild saved details if any more details are parsed
+    result['description'] = "";
+    result['duration'] = "";
+    result['level'] = "";
+    result['prereqsuisites'] = [];
+    temp = document.querySelectorAll('div [data-testid="LoDetailsLoDescriptionText"] div p');
+    if (temp.length) {
+      result['description'] = temp[0].innerText;
+    }
 
-    // result['linkedin'] = "";
-    result['details'] = "";
-    // a = document.querySelectorAll('a.course-author-entity__meta-action');
-    // if (a.length) {
-    //   result['linkedin'] = a[0].href;
-    // }
-    // a = document.querySelectorAll('.classroom-layout-panel-layout__main p');
-    // if (a.length) {
-    //   result['details'] = a[0].innerText;
-    // }
+    temp = document.querySelectorAll('span:nth-child(2)');
+    if (temp.length) {
+      result['level'] = temp[1].innerText;
+      result['duration'] = temp[3].innerText;
+    }
+
+    temp = document.querySelectorAll('div [data-testid="LoDetailsLoDescriptionText"] a');
+    for (index = 0; index < temp.length; index++) {
+      entry = {}
+      entry['title'] = temp[index].innerText;
+      entry['href'] = temp[index].href;
+      result['prereqsuisites'].push(entry);
+    }
     return result;
   });
 
   //console.log("process_course_details done");
-  return [newdata['linkedin'], newdata['details']];
+  //console.log(newdata)
+  return [newdata['description'], newdata['level'], newdata['duration'], newdata['prereqsuisites']];
 };
 
 const process_completed = async (browser, options, data) => {
@@ -89,7 +92,7 @@ const process_completed = async (browser, options, data) => {
 
       index1 += '">'.length;
       index2 = contentHtml.indexOf('</a></span></td>', index1);
-      entry['description'] = contentHtml.substring(index1, index2);
+      entry['title'] = contentHtml.substring(index1, index2);
       index1 = index2;
 
       index1 = contentHtml.indexOf('td data-label="Registration Date"><span>', index1);
@@ -111,9 +114,13 @@ const process_completed = async (browser, options, data) => {
       for (i=0; i<newdata['completed-courses'].length; i++) {
         if (!newdata['completed-courses'][i]['details']) {
           console.log(i);
-          [temp1, temp2] = await process_course_details(filteredPage, options, newdata['completed-courses'][i]['link']);
-          newdata['completed-courses'][i]['linkedin'] = temp1;
-          newdata['completed-courses'][i]['details'] = temp2;
+          [temp1, temp2, temp3, temp4] = await process_course_details(filteredPage, options, newdata['completed-courses'][i]['link']);
+          newdata['completed-courses'][i]['description']    = temp1;
+          newdata['completed-courses'][i]['level']          = temp2;
+          newdata['completed-courses'][i]['duration']       = temp3;
+          newdata['completed-courses'][i]['prereqsuisites'] = temp4;
+
+          
         }
       }
     }

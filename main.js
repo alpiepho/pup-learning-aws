@@ -197,7 +197,7 @@ const main = async () => {
   // login, get list of completed courses, logout
   data = {}
   await site.process_completed(browser, options, data);
-  // await base.browser_close(browser);
+  await base.browser_close(browser);
 
   //DEBUG
   console.log("data:");
