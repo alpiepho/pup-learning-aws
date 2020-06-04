@@ -33,6 +33,9 @@ const process_course_details = async (page, options, href) => {
     result['duration'] = "";
     result['level'] = "";
     result['prereqsuisites'] = [];
+    result['type'] = "";
+
+    //#app-root > div.page > div.css-70bgut > div.css-16a6yr3 > div.css-t6x1i7 > header > div > div:nth-child(1) > span > span
     temp = document.querySelectorAll('div [data-testid="LoDetailsLoDescriptionText"] div p');
     if (temp.length) {
       result['description'] = temp[0].innerText;
@@ -40,6 +43,7 @@ const process_course_details = async (page, options, href) => {
 
     temp = document.querySelectorAll('span:nth-child(2)');
     if (temp.length) {
+      result['type'] = temp[0].innerText;
       result['level'] = temp[1].innerText;
       result['duration'] = temp[3].innerText;
     }
@@ -56,7 +60,7 @@ const process_course_details = async (page, options, href) => {
 
   //console.log("process_course_details done");
   //console.log(newdata)
-  return [newdata['description'], newdata['level'], newdata['duration'], newdata['prereqsuisites']];
+  return [newdata['description'], newdata['level'], newdata['duration'], newdata['prereqsuisites'], newdata['type']];
 };
 
 const process_completed = async (browser, options, data) => {
@@ -114,13 +118,12 @@ const process_completed = async (browser, options, data) => {
       for (i=0; i<newdata['completed-courses'].length; i++) {
         if (!newdata['completed-courses'][i]['details']) {
           console.log(i);
-          [temp1, temp2, temp3, temp4] = await process_course_details(filteredPage, options, newdata['completed-courses'][i]['link']);
+          [temp1, temp2, temp3, temp4, temp5] = await process_course_details(filteredPage, options, newdata['completed-courses'][i]['link']);
           newdata['completed-courses'][i]['description']    = temp1;
           newdata['completed-courses'][i]['level']          = temp2;
           newdata['completed-courses'][i]['duration']       = temp3;
           newdata['completed-courses'][i]['prereqsuisites'] = temp4;
-
-          
+          newdata['completed-courses'][i]['type']           = temp5;
         }
       }
     }

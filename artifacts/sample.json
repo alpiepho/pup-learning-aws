@@ -20,7 +20,8 @@
           "title": "IoT Edge Computing: Amazon FreeRTOS Primer",
           "href": "https://www.aws.training/learningobject/wbc?id=33191"
         }
-      ]
+      ],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/Curriculum?id=33308",
@@ -42,7 +43,8 @@
           "title": "IoT Foundation: Command and Control",
           "href": "https://www.aws.training/learningobject/wbc?id=23822"
         }
-      ]
+      ],
+      "type": "LEARNING PATH"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=34593",
@@ -64,7 +66,8 @@
           "title": "IoT Edge Computing: Amazon FreeRTOS Primer",
           "href": "https://www.aws.training/learningobject/wbc?id=33191"
         }
-      ]
+      ],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=33872",
@@ -73,7 +76,8 @@
       "description": "This video provides a walkthrough of onboarding a Raspberry Pi as an AWS IoT Greengrass core.",
       "level": "INTERMEDIATE",
       "duration": "30 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=33191",
@@ -95,7 +99,8 @@
           "title": "IoT Edge Computing: Introduction to Amazon FreeRTOS",
           "href": "https://www.aws.training/learningobject/video?id=16622"
         }
-      ]
+      ],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=26852",
@@ -121,7 +126,8 @@
           "title": "IoT Foundation: Introduction to Fleet Management",
           "href": "https://www.aws.training/learningobject/wbc?id=26760"
         }
-      ]
+      ],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/Curriculum?id=27289",
@@ -135,7 +141,8 @@
           "title": "Introduction to AWS IoT",
           "href": "https://www.aws.training/learningobject/video?id=16505"
         }
-      ]
+      ],
+      "type": "LEARNING PATH"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=26760",
@@ -157,7 +164,8 @@
           "title": "IoT Foundation: Command and Control",
           "href": "https://www.aws.training/learningobject/wbc?id=23822"
         }
-      ]
+      ],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=23822",
@@ -175,7 +183,8 @@
           "title": "Introduction to AWS Internet of Things",
           "href": "https://www.aws.training/learningobject/video?id=16505"
         }
-      ]
+      ],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=48709",
@@ -184,7 +193,8 @@
       "description": "Billions of small, physical devices, such as sensors and actuators, are currently deployed in homes, factories, hospitals, and in other business use cases. This proliferation of devices requires solutions to connect, collect, store, and analyze the data these devices generate. By using AWS IoT, you can build IoT solutions for most use cases across a wide range of devices. Being able to build and administer an IoT infrastructure is quickly becoming the skill set of the future.",
       "level": "INTERMEDIATE",
       "duration": "2 1/2 HOURS",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/Curriculum?id=42037",
@@ -193,7 +203,8 @@
       "description": "This course teaches our customers about the AWS Well-Architected Framework to understand how they can make informed decisions about their architecture in a cloud-native way and understand the impact of design decisions. By using the Well-Architected Framework, customers can understand the risks in their architecture, and learn ways to mitigate them.",
       "level": "FUNDAMENTAL",
       "duration": "1 1/2 HOURS",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "CURRICULUM"
     },
     {
       "link": "https://www.aws.training/Details/Curriculum?id=38111",
@@ -202,7 +213,8 @@
       "description": "This self-paced course provides a basic overview of different database technologies and architectures and introduces you to the various Amazon Web Services (AWS) database services. The course also covers the concept of the purpose-built database, which changes the one-size-fits-all methodology that previously existed.",
       "level": "FUNDAMENTAL",
       "duration": "5 1/2 HOURS",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "CURRICULUM"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=39246",
@@ -211,7 +223,8 @@
       "description": "This course helps you distinguish the differences between the multiple AWS storage services and provides an introduction to the different storage types, including block, file, object, and hybrid storage. The many AWS services that provide these types of storage are introduced at a high level so that you can begin to consider the appropriate storage options for your applications that need access to data.",
       "level": "FUNDAMENTAL",
       "duration": "100 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/Video?id=27497",
@@ -220,7 +233,8 @@
       "description": "In this course, we will address questions like \"How does moving to cloud affect me as a network architect/engineer? Is there a place for my skills in the cloud? If there is a place for me, what will I do differently in the cloud? Are there any cool things I can do in the cloud, but can’t do off-cloud?\".",
       "level": "FUNDAMENTAL",
       "duration": "30 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "VIDEO"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=34259",
@@ -229,7 +243,8 @@
       "description": "In this self-paced course, you will learn fundamental AWS cloud security concepts, including AWS access control, data encryption methods, and how network access to your AWS infrastructure can be secured. We will address and your security responsibility in the AWS cloud and the different security-oriented services available.",
       "level": "FUNDAMENTAL",
       "duration": "2 HOURS",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=20294",
@@ -238,7 +253,8 @@
       "description": "This course introduces you to basic machine learning concepts and the machine process the data goes through. We explore each step in the machine learning process in detail and explain some of the common terms and techniques that occur during a phase of a ML project.",
       "level": "INTERMEDIATE",
       "duration": "1 HOUR",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/Curriculum?id=27241",
@@ -247,7 +263,8 @@
       "description": "After taking this set of courses, you’ll understand how artificial intelligence (AI) led to machine learning (ML), which then led to deep learning (DL).",
       "level": "FUNDAMENTAL",
       "duration": "45 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "CURRICULUM"
     },
     {
       "link": "https://www.aws.training/Details/Video?id=27405",
@@ -256,7 +273,8 @@
       "description": "This introductory course provides an overview of Deep Learning (DL) concepts. In the course, we discuss the AWS services available for DL and walk through a case study of an AWS customer who is innovating with DL.",
       "level": "FUNDAMENTAL",
       "duration": "20 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "VIDEO"
     },
     {
       "link": "https://www.aws.training/Details/Video?id=27404",
@@ -265,7 +283,8 @@
       "description": "This course introduces you to machine learning concepts and the role data plays. We explore use cases, discuss an innovative way to build smart applications, and review the AWS frameworks and services you can use for machine learning.",
       "level": "FUNDAMENTAL",
       "duration": "10 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "VIDEO"
     },
     {
       "link": "https://www.aws.training/Details/Video?id=27394",
@@ -274,7 +293,8 @@
       "description": "This is an introductory course on artificial intelligence (AI). In the course, we discuss what AI is and why it is important, and take a brief look at machine learning and deep learning—which are subsets of AI—and describe how Amazon uses AI in its products.",
       "level": "FUNDAMENTAL",
       "duration": "10 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "VIDEO"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=27197",
@@ -283,7 +303,8 @@
       "description": "This course introduces AWS Lambda and teaches you the basics of how you configure it to connect to other AWS services. You will also learn about the factors that impact function performance and how serverless development and deployment practices differ from those in traditional deployment environments.",
       "level": "FUNDAMENTAL",
       "duration": "60 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/Curriculum?id=27076",
@@ -292,7 +313,8 @@
       "description": "The fundamental-level course is intended for individuals who seek an overall understanding of the AWS Cloud, independent of specific technical roles. It provides a detailed overview of cloud concepts, AWS services, security, architecture, pricing, and support. This course also helps you prepare for the AWS Certified Cloud Practitioner exam.",
       "level": "FUNDAMENTAL",
       "duration": "6 HOURS",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "CURRICULUM"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=29704",
@@ -301,7 +323,8 @@
       "description": "This module focuses on pricing for the AWS Cloud. It starts with a general introduction to our philosophy on pricing, covers the actual pricing characteristics for many of our core offerings, and covers some tools that we’ve developed to help you control your costs and ensure you’re getting the best value for your money. It also includes information on available support plans.",
       "level": "FUNDAMENTAL",
       "duration": "30 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=29703",
@@ -310,7 +333,8 @@
       "description": "In this module, you will learn how to describe basic security and compliance aspects of the AWS platform and the shared security model.",
       "level": "FUNDAMENTAL",
       "duration": "50 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=29702",
@@ -319,7 +343,8 @@
       "description": "This module focuses on architectural considerations for deploying or migrating to the AWS Cloud. The module covers the fundamentals of a well architected solution, discusses fault tolerance and availability, and wraps up with a section on web hosting on the AWS Cloud.",
       "level": "FUNDAMENTAL",
       "duration": "30 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=29701",
@@ -328,7 +353,8 @@
       "description": "This module focuses on some of the integrated services that are part of the AWS Cloud, including Application Load Balancer, Auto Scaling, Amazon Route 53, Amazon Relational Database Services (RDS), AWS Lambda, AWS Elastic Beanstalk, Amazon Simple Notification Service (SNS), Amazon CloudWatch, Amazon CloudFront, and AWS CloudFormation.",
       "level": "FUNDAMENTAL",
       "duration": "100 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=29700",
@@ -337,7 +363,8 @@
       "description": "This module is comprised of a series of videos that provide high level information about several AWS Cloud services, including Amazon Elastic Cloud Compute (EC2), Amazon Elastic Block Store (EBS), Amazon Simple Storage Service (S3), the AWS Global Infrastructure, Amazon Virtual Private Cloud (VPC), and Security Groups.",
       "level": "FUNDAMENTAL",
       "duration": "45 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/Video?id=16448",
@@ -346,7 +373,8 @@
       "description": "In this course, you will be introduced to AWS Identity and Access Management (IAM). The course will highlight how IAM can be used for authentication and authorization to AWS services. Discussions around IAM policies and roles will also be included, as well as potential use cases for the service. The course will wrap up with a demonstration on how to create an IAM group and user, attach a policy and add a user to a group.",
       "level": "FUNDAMENTAL",
       "duration": "10 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "VIDEO"
     },
     {
       "link": "https://www.aws.training/Details/Video?id=16204",
@@ -355,7 +383,8 @@
       "description": "This course introduces AWS development tools that enable a continuous development pipeline and integrate closely with other AWS services. These tools support a variety of use cases and enable customers to reach ideal solutions.",
       "level": "FUNDAMENTAL",
       "duration": "5 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "VIDEO"
     },
     {
       "link": "https://www.aws.training/Details/Video?id=15875",
@@ -364,7 +393,8 @@
       "description": "A basic overview of the AWS Billing and Cost Management service and dashboard. Different AWS cost tools, such as Cost Explorer and Budgets, are covered in this introduction. A discussion on the AWS Free Tier is also included in this course.",
       "level": "FUNDAMENTAL",
       "duration": "10 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "VIDEO"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=27074",
@@ -373,7 +403,8 @@
       "description": "This course will orient you to key serverless concepts to help you start developing serverless applications. You will learn how development best practices you already use in server-based development apply to serverless development, and how to adjust your development processes for serverless application development.",
       "level": "FUNDAMENTAL",
       "duration": "25 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     },
     {
       "link": "https://www.aws.training/Details/Video?id=16382",
@@ -382,7 +413,8 @@
       "description": "This is an introduction to Amazon Elastic Compute Cloud or Amazon EC2, a web service that provides secure, resizable compute capacity in the cloud. In this course, we provide an overview of the service and demonstrate how to build and configure an Amazon EC2 instance.",
       "level": "FUNDAMENTAL",
       "duration": "10 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "VIDEO"
     },
     {
       "link": "https://www.aws.training/Details/eLearning?id=29699",
@@ -391,7 +423,8 @@
       "description": "This module provides an introduction to the AWS Cloud and the methods available to interact with various AWS services.",
       "level": "FUNDAMENTAL",
       "duration": "20 MINUTES",
-      "prereqsuisites": []
+      "prereqsuisites": [],
+      "type": "E-LEARNING"
     }
   ]
 }
