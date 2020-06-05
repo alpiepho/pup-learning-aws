@@ -10,6 +10,11 @@
     max-width: 800px;
 }
 
+a,
+a:visited {
+    color: black;
+}
+
 #top {
     text-align: center;
 }
@@ -68,6 +73,10 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
+    .page {
+        width: 90%;
+        margin: auto;
+    }
     ul {
         padding: 0;
     }
