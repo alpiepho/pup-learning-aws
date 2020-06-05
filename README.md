@@ -1,8 +1,6 @@
 ![website](https://github.com/alpiepho/pup-learning-aws/workflows/website/badge.svg)
 
 
-:warn: WARNING: this is just a start/stub at this time.
-
 Deployed on GitHub pages [here](https://alpiepho.github.io/pup-learning-aws/).
 
 :warn: <b>IMPORTANT NOTE</b>: The file **transcript.html** is manually created:
