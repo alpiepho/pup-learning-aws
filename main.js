@@ -59,18 +59,13 @@ date: "2020-06-04"
 description: "Summary of my AWS Training Completed Courses"
 ---
 
-This a summary of all the AWS Training courses I have completed.  These are the
+I recently created a summary of all the AWS Training courses I have completed.  These are the
 free online courses.
-
-A full summary with more details can be found [here](https://alpiepho.github.io/pup-learning-aws/).
-
-#### top
 
 `;
 
 const md2 = `
-
-#### bottom
+The full summary with more details can be found [here](https://alpiepho.github.io/pup-learning-aws/).
 `;
 
 function build_hours_minutes(data) {
@@ -144,25 +139,25 @@ function build_md(data, totalH, totalM) {
   let mdStr = md1;
   mdStr += "Total Completed Courses: " + data['completed-courses'].length + ", Time: " + totalH + "h " + totalM + "m\n";
   mdStr += "<br/>\n";
-  mdStr += "<br/>\n";
-  mdStr += "<br/>\n";
-  mdStr += "\n";
-  data['completed-courses'].forEach(entry => {
-    mdStr += "\n";
-    mdStr += "\n";
-    mdStr += "[" + entry['title'] + "](" + entry['link'] + ")\n";
-    mdStr += "- Type: " + entry['type'].toLowerCase() + "\n";
-    mdStr += "- Level: " + entry['level'].toLowerCase() + "\n";
-    mdStr += "- Duration: " + entry['duration'].toLowerCase() + "\n";
-    mdStr += "- Completed: " + entry['registration-date'] + "\n";
-    mdStr += "- Description: " + entry['description'] + "\n";
-    mdStr += "- [top](#top) / [bottom](#bottom)\n";
+  // mdStr += "<br/>\n";
+  // mdStr += "<br/>\n";
+  // mdStr += "\n";
+  // data['completed-courses'].forEach(entry => {
+  //   mdStr += "\n";
+  //   mdStr += "\n";
+  //   mdStr += "[" + entry['title'] + "](" + entry['link'] + ")\n";
+  //   mdStr += "- Type: " + entry['type'].toLowerCase() + "\n";
+  //   mdStr += "- Level: " + entry['level'].toLowerCase() + "\n";
+  //   mdStr += "- Duration: " + entry['duration'].toLowerCase() + "\n";
+  //   mdStr += "- Completed: " + entry['registration-date'] + "\n";
+  //   mdStr += "- Description: " + entry['description'] + "\n";
+  //   mdStr += "- [top](#top) / [bottom](#bottom)\n";
 
-    mdStr += "<br/>\n";
-    mdStr += "<br/>\n";
-    mdStr += "<br/>\n";
-      mdStr += "\n";
-  });
+  //   mdStr += "<br/>\n";
+  //   mdStr += "<br/>\n";
+  //   mdStr += "<br/>\n";
+  //     mdStr += "\n";
+  // });
   mdStr += md2;
   fs.writeFileSync(MD_FILE, mdStr);
 }
