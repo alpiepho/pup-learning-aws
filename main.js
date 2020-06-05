@@ -54,7 +54,7 @@ const html2 = `
 `;
 
 const md1 = `---
-title: LinkedIn Completed Courses
+title: AWS Training Completed Courses
 date: "2020-06-04"
 description: "Summary of my AWS Training Completed Courses"
 ---
