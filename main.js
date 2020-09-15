@@ -4,7 +4,8 @@ base = require('./base');
 site = require('./site');
 
 const HTML_FILE = "./public/index.html";
-const MD_FILE = "./artifacts/learning-aws-summary.mdx";
+const MD_FILE = "./artifacts/learning-aws-summary.md";
+const MD_FILEX = "./artifacts/learning-aws-summary.mdx";
 const SCREENSHOT_DIR = "./screenshots";
 
 const html1 = `
@@ -160,6 +161,7 @@ function build_md(data, totalH, totalM) {
   // });
   mdStr += md2;
   fs.writeFileSync(MD_FILE, mdStr);
+  fs.writeFileSync(MD_FILEX, mdStr);
 }
 
 const main = async () => {
@@ -170,7 +172,7 @@ const main = async () => {
     forceFullGather:  true,     // skip test for number of course
     scrollToBottom:   true,     // scroll page to bottom (WARNING: non-visible thumbnails are not loaded until page is scrolled)
     gatherDetails:    true,     // parse the details
-    useSampleData:   true,     // skip browser and use sample data file
+    useSampleData:   false,     // skip browser and use sample data file
     saveSampleData:   true,     // save to sample data file
     screenshot:      false,     // take snapshots
     screenshotDir:   SCREENSHOT_DIR

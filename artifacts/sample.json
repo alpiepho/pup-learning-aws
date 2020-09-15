@@ -1,6 +1,36 @@
 {
   "completed-courses": [
     {
+      "link": "https://www.aws.training/Details/Curriculum?id=38138",
+      "title": "Mobile Development in IoT",
+      "registration-date": "14 September, 2020",
+      "description": "In this course, you will learn how to create mobile and web applications that use AWS IoT Core, AWS AppSync, and Amazon Cognito to interact with Internet of Things (IoT) devices. Across IoT verticals, customers need the ability to allow authenticated, authorized users to interact with IoT devices using Amazon Web Services (AWS). This course will cover how several services can be used to implement common user and device interactions, including pairing a device to a user, controlling a device through a mobile application, and receiving real-time updates of device messages as an end user.",
+      "level": "INTERMEDIATE",
+      "duration": "2 HOURS",
+      "prereqsuisites": [],
+      "type": "CURRICULUM"
+    },
+    {
+      "link": "https://www.aws.training/Details/Curriculum?id=42335",
+      "title": "Deep Dive into AWS IoT Authentication and Authorization ",
+      "registration-date": "25 June, 2020",
+      "description": "Security is a central concern for all of Amazon Web Services (AWS). Security is extremely important in the field of IoT (Internet of Things) because IoT devices are physically accessible. Authentication and authorization are the foundations of a secure IoT infrastructure.\nThis course explores the concepts of IoT authentication and authorization within AWS IoT. You will learn about the IoT control plane and data plane and how to authenticate and authorize to both. This course is intended for students who would like to securely connect devices, mobile apps, desktop apps, web apps, or the CLI to AWS IoT. You will learn about using different authentication methods and their appropriate authorization policies.",
+      "level": "ADVANCED",
+      "duration": "4 HOURS",
+      "prereqsuisites": [],
+      "type": "CURRICULUM"
+    },
+    {
+      "link": "https://www.aws.training/Details/Curriculum?id=43468",
+      "title": "AWS IoT Security Series",
+      "registration-date": "10 June, 2020",
+      "description": "Security is a central concern for all of Amazon Web Services (AWS). Security is extremely important in the field of IoT (Internet of Things) because IoT devices are physically accessible. Authentication and authorization are the foundations of a secure IoT infrastructure.\nThis security path provides you with an introduction to AWS IoT security and deeper information about how to configure and maintain security within your AWS IoT solution.\nOnce you complete this series, you will have gained in-depth knowledge and skills within AWS IoT security, and hands-on experience with a broad range of topics; such as, writing AWS IoT policies, creating a custom authorizer, and scheduling audit checks of your AWS IoT settings. Furthermore, by completing the AWS IoT Security Series, you will be better prepared to secure your fleet’s authorization and authentication processes, monitor your fleet’s behavior, and respond effectively with mitigation actions.",
+      "level": "INTERMEDIATE",
+      "duration": "10 HOURS",
+      "prereqsuisites": [],
+      "type": "LEARNING PATH"
+    },
+    {
       "link": "https://www.aws.training/Details/eLearning?id=33230",
       "title": "IoT Microcontrollers: Onboarding the Amazon FreeRTOS Simulator for Windows",
       "registration-date": "2 June, 2020",

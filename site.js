@@ -41,11 +41,17 @@ const process_course_details = async (page, options, href) => {
       result['description'] = temp[0].innerText;
     }
 
-    temp = document.querySelectorAll('span:nth-child(2)');
+    temp = document.querySelectorAll('div:nth-child(1) > span > span');
     if (temp.length) {
       result['type'] = temp[0].innerText;
-      result['level'] = temp[1].innerText;
-      result['duration'] = temp[3].innerText;
+    }
+    temp = document.querySelectorAll('#about span:nth-child(1) span');
+    if (temp.length) {
+      result['level'] = temp[0].innerText;
+    }
+    temp = document.querySelectorAll('#about span:nth-child(2) span');
+    if (temp.length) {
+      result['duration'] = temp[0].innerText;
     }
 
     temp = document.querySelectorAll('div [data-testid="LoDetailsLoDescriptionText"] a');
@@ -59,7 +65,7 @@ const process_course_details = async (page, options, href) => {
   });
 
   //console.log("process_course_details done");
-  //console.log(newdata)
+  console.log(newdata)
   return [newdata['description'], newdata['level'], newdata['duration'], newdata['prereqsuisites'], newdata['type']];
 };
 
@@ -85,11 +91,12 @@ const process_completed = async (browser, options, data) => {
     var index1 = 0;
     var index2 = 0;
     while (index1 != -1 && index1 < contentHtml.length) {
-      // ex. <td data-label="Description"><span><a href="/Details/Curriculum?id=33308">Internet of Things (IoT) Microcontrollers Series</a></span></td><td data-label="Registration Date"><span>2 June, 2020</span>
+      // ex. <td data-label="TranscriptDescriptionColumn"><span><a href="/Details/Curriculum?id=38138">Mobile Development in IoT</a></span></td><td data-label="TranscriptDateColumn"><span>14 September, 2020</span></td><td data-label="TranscriptStatusColumn"><span>Completed</span></td>
+
       let entry = {};
-      index1 = contentHtml.indexOf('td data-label="Description"><span><a href="', index1);
+      index1 = contentHtml.indexOf('td data-label="TranscriptDescriptionColumn"><span><a href="', index1);
       if (index1 == -1) break;
-      index1 += 'td data-label="Description"><span><a href="'.length;
+      index1 += 'td data-label="TranscriptDescriptionColumn"><span><a href="'.length;
       index2 = contentHtml.indexOf('">', index1);
       entry['link'] = PUP_URL_BASE + contentHtml.substring(index1, index2);
       index1 = index2;
@@ -99,9 +106,9 @@ const process_completed = async (browser, options, data) => {
       entry['title'] = contentHtml.substring(index1, index2);
       index1 = index2;
 
-      index1 = contentHtml.indexOf('td data-label="Registration Date"><span>', index1);
+      index1 = contentHtml.indexOf('td data-label="TranscriptDateColumn"><span>', index1);
       if (index1 == -1) break;
-      index1 += 'td data-label="Registration Date"><span>'.length;
+      index1 += 'td data-label="TranscriptDateColumn"><span>'.length;
       index2 = contentHtml.indexOf('</span>', index1);
       entry['registration-date'] = contentHtml.substring(index1, index2);
       index1 = index2;
